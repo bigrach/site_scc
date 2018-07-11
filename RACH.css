@@ -47,18 +47,35 @@ h1 {
   font-family: 'Roboto', sans-serif;
   font-size: 20px;
   color:  #AED6D3;
+  width: 40%;
 }
 
 .texte {
   font-family: 'Roboto Condensed', sans-serif;
   color: grey;
-  width: 70%;
+  width: 40%;
 }
 
 .container {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-evenly;
+
+
+  @media screen and (max-width: $app-media-xs)
+  @include flexbox
+  @include flex-direction
+  > div
+    float: none !important
+    width: 100%
+    padding-left: 0 !important
+    padding-right: 0 !important
 }
+
+  .container :nth-child(1) { order 1; }
+  .container :nth-child(2) { order 2; }
+  .container :nth-child(3) { order 3; }
+  .container :nth-child(4) { order 4; }
+
 
 .a_propos {
   width: 100px;
