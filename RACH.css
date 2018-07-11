@@ -29,6 +29,20 @@ h1 {
   color: #e6ffff;
   }
 
+  .accueil {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin-top: 4px;
+    height: 80vh;
+    background-image: url('img/couv2.png');
+    background-size: cover;
+    background-position: top;
+    background-attachment: fixed;
+  }
+
 .titre {
   font-family: 'Roboto', sans-serif;
   font-size: 20px;
@@ -38,28 +52,27 @@ h1 {
 .texte {
   font-family: 'Roboto Condensed', sans-serif;
   color: grey;
-  width: 40%;
+  width: 70%;
 }
 
 .container {
   display: flex;
   justify-content: space-between;
-  width 900px;
+}
+
+.a_propos {
+  width: 100px;
+	height: auto;
 }
 
 /* flex-direction: row; tjrs utile*/
-
-.container :nth-child(1) { order 1; }
-.container :nth-child(2) { order 2; }
-.container :nth-child(3) { order 3; }
-.container :nth-child(4) { order 4; }
 
 
 /* Dropdown Button */
 .dropbtn {
     background-color: #AED6D3;
     color: grey;
-    padding: 12px; 12px;
+    padding: 12px;
     font-size: 14px;
     border: none;
 }
