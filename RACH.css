@@ -36,8 +36,8 @@ h1 {
     justify-content: center;
     text-align: center;
     margin-top: 4px;
-    height: 80vh;
-    background-image: url('img/couv2.png');
+    height: 120vh;
+    background-image: url('img/FILLES.png');
     background-size: cover;
     background-position: top;
     background-attachment: fixed;
@@ -47,7 +47,6 @@ h1 {
   font-family: 'Roboto', sans-serif;
   font-size: 20px;
   color:  #AED6D3;
-  width: 40%;
 }
 
 .texte {
@@ -72,14 +71,26 @@ h1 {
     padding-right: 0 !important
 }
 
-  .container :nth-child(1) { order 1; }
-  .container :nth-child(2) { order 2; }
-  .container :nth-child(3) { order 3; }
-  .container :nth-child(4) { order 4; }
+.container2 {
+  display: flex;
+  justify-content: flex-end;
+  width 200px;
+
+
+  @media screen and (max-width: $app-media-xs)
+  @include flexbox
+  @include flex-direction
+  > div
+    float: none !important
+    width: 100%
+    padding-left: 0 !important
+    padding-right: 0 !important
+
+}
 
 
 .a_propos {
-  width: 100px;
+  width: 70px;
 	height: auto;
 }
 
