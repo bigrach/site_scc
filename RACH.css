@@ -54,7 +54,6 @@ h1 {
   bottom: 0;
   right: 0;
   width: 300px;
-  z-index: -1;
 }
 
 .a_propos {
@@ -62,23 +61,15 @@ h1 {
 	height: auto;
 }
 
-.mes_colonnes {
-    column-count: 3;
-    column-gap: 40px;
-    column-rule-style: solid;
-    column-rule-width: 1px;
-    column-width: 100px;
-}
-
 .colonne1 {
 	float: left;
-	width: 100px;
+	width: 15px;
 	margin-right: 5px;
 }
 
 .colonne2 {
 	float: right;
-	width: 300px;
+	width: 100px;
 	margin-left: 10px;
 }
 
@@ -86,8 +77,6 @@ h1 {
 	overflow: hidden;
 	background: khaki;
   font-family: 'Roboto Condensed', sans-serif;
-  column-span: 1;
-width: 400;
 }
 
 /* Dropdown Button */

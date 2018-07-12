@@ -6,20 +6,6 @@ body {
   background-color: white;
 }
 
-.container {
-  display: flex;
-  justify-content: space-between;
-  width 900px;
-
-  @media screen and (max-width: $app-media-xs)
-  @include flexbox
-  @include flex-direction
-  > div
-    float: none !important
-    width: 100%
-    padding-left: 0 !important
-    padding-right: 0 !important
-}
 .accueil {
   display: flex;
   flex-direction: column;
