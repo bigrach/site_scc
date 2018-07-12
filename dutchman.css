@@ -3,7 +3,7 @@
 body {
   font-family: 'Montserrat';
   color: grey;
-  background-color: white;
+  background-color: black;
 }
 
 .accueil {
@@ -12,18 +12,20 @@ body {
   align-items: center;
   justify-content: center;
   text-align: center;
-  margin-top: 4px;
-  height: 80vh;
-  background-image: url('img/couv2.png');
-  background-size: cover;
-  background-position: top;
-  background-attachment: fixed;
+}
+
+.gif {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  margin-top: -50px;
+  margin-left: -100px;
 }
 
 h1 {
   font-family: 'Amatic SC', cursive;
   font-size: 50px;
-  color: #e6ffff;
+  color: #3d5c5c;
   }
   .dropdown {
       position: relative;
