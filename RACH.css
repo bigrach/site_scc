@@ -58,7 +58,8 @@ h1 {
 
 .container {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-between;
+  width 900px;
 
 
   @media screen and (max-width: $app-media-xs)
