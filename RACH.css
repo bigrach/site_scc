@@ -131,7 +131,7 @@ li:hover ul.niveau2, li li:hover ul.niveau3 {display: block}
 }
 
 
-/* pr écrans + petits */
+/* ecran + petits */
 @media only screen and (max-width: 600px) {
   body {
   font-family: 'Montserrat';
@@ -153,6 +153,7 @@ h1 {
     justify-content: center;
     text-align: center;
     margin-top: 4px;
+    height: 120vw;
     background-image: url('img/FILLES.png');
     background-size:100% auto;
     background-position: top;
@@ -187,8 +188,11 @@ h1 {
       margin: auto;
   }
 
-.container {
-  width:100%; }
+  .container {
+    display: block;
+    flex-direction: column;
+    justify-content: space-around;
+    width:100%; }
 
 .container2 {
   display: flex;
@@ -202,14 +206,18 @@ h1 {
   height:  6vw;
 }
 
+
+/* flex-direction: row; tjrs utile*/
+
+
 /* Dropdown Button */
 .dropbtn {
     background-color: #AED6D3;
     color: grey;
-    padding: 12px;
-    font-size: 20px;
+    padding: 8px;
+    font-size: 12px;
     border: none;
-    width: 45vw;
+    width: 20vw;
     margin: auto;
 }
 

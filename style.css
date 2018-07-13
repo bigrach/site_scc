@@ -142,8 +142,9 @@ When you're done, you can delete all of this grey text, it's just a comment.
     justify-content: center;
     text-align: center;
     margin-top: 4px;
+    height: 45vw;
     background-image: url('img/couv2.png');
-    background-size:150%;
+    background-size:100% auto;
     background-position: top;
     background-attachment: fixed;
     background-repeat: no-repeat;
@@ -181,10 +182,10 @@ When you're done, you can delete all of this grey text, it's just a comment.
   .dropbtn {
       background-color: #AED6D3;
       color: grey;
-      padding: 12px;
-      font-size: 20px;
+      padding: 8px;
+      font-size: 12px;
       border: none;
-      width: 45vw;
+      width: 20vw;
       margin: auto;
   }
 
