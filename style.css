@@ -43,20 +43,21 @@ When you're done, you can delete all of this grey text, it's just a comment.
 
   h1 {
     font-family: 'Amatic SC', cursive;
-    font-size: 3vw;
+    font-size: 4vw;
     color: #e6ffff;
     }
 
   .titre {
     font-family: 'Roboto', sans-serif;
-    font-size: 20px;
+    font-size: 2vw;
     color:  #AED6D3;
   }
 
   .texte {
     font-family: 'Roboto Condensed', sans-serif;
     color: grey;
-    width: 40%;
+    width: 40vw;
+    font-size: 1.5vw;
   }
 
   .container {
@@ -64,6 +65,11 @@ When you're done, you can delete all of this grey text, it's just a comment.
     justify-content: space-between;
     width 900px;
 }
+
+  video {
+    width: 30vw
+  }
+
 
   /* Dropdown Button */
   .dropbtn {
@@ -112,7 +118,7 @@ When you're done, you can delete all of this grey text, it's just a comment.
   li:hover ul.niveau2, li li:hover ul.niveau3 {display: block}
 
   .sponsors {
-    width: 100px;
+    width: 7vw;
   	height: auto;
   }
 }
@@ -177,15 +183,17 @@ When you're done, you can delete all of this grey text, it's just a comment.
       background-color: #AED6D3;
       color: grey;
       padding: 12px;
-      font-size: 22px;
+      font-size: 20px;
       border: none;
-      width: 65vw
+      width: 45vw;
+      margin: auto;
   }
 
   /* The container <div> - needed to position the dropdown content */
   .dropdown {
       position: relative;
       display: inline-block;
+      margin: auto;
   }
 
   /* Dropdown Content (Hidden by Default) */
@@ -220,12 +228,14 @@ When you're done, you can delete all of this grey text, it's just a comment.
   li:hover ul.niveau2, li li:hover ul.niveau3 {display: block}
 
   .sponsors {
-    width: 60%;
-    height: auto;
+    width: auto;
+    height:  6vw;
   }
   section {
     display: flex;
-    justify content: space-between;
+    flex-wrap: wrap-reverse;
+    justify-content: space-around;
+
   }
 }
 }

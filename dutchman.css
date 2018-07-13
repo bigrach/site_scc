@@ -3,7 +3,7 @@
 body {
   font-family: 'Montserrat';
   color: grey;
-  background-color: black;
+  background-color: #13263a;
 }
 
 .accueil {
@@ -25,8 +25,9 @@ body {
 h1 {
   font-family: 'Amatic SC', cursive;
   font-size: 50px;
-  color: #3d5c5c;
+  color: #00cc99;
   }
+  
   .dropdown {
       position: relative;
       display: inline-block;

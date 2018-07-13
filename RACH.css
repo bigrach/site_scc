@@ -15,83 +15,68 @@ When you're done, you can delete all of this grey text, it's just a comment.
 
 /* Fonts from Google Fonts - more at https://fonts.google.com */
 @import url('https://fonts.googleapis.com/css?family=Amatic+SC|Montserrat|Roboto|Roboto+Condensed');
-
-body {
+/* If the screen size is 601px or more, set the font-size of <div> to 80px */
+@media only screen and (min-width: 601px) {
+  body {
   font-family: 'Montserrat';
   color: grey;
   background-color: white;
 }
 
-
 h1 {
   font-family: 'Amatic SC', cursive;
-  font-size: 50px;
+  font-size: 4vw;
   color: #e6ffff;
   }
+
+.beatch {
+  width: 38vw
+}
 
   .accueil {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
     text-align: center;
+    justify-content: center;
     margin-top: 4px;
-    height: 120vh;
+    height: 70vw;
     background-image: url('img/FILLES.png');
-    background-size: cover;
+    background-size:100% auto;
     background-position: top;
-    background-attachment: fixed;
+    background-attachment:fixed;
+    background-repeat: no-repeat;
   }
 
-.titre {
-  font-family: 'Roboto', sans-serif;
-  font-size: 20px;
-  color:  #AED6D3;
-}
+  .titre {
+    font-family: 'Roboto', sans-serif;
+    font-size: 2vw;
+    color:  #AED6D3;
+  }
 
-.texte {
-  font-family: 'Roboto Condensed', sans-serif;
-  color: grey;
-  width: 40%;
-}
+  .texte {
+    font-family: 'Roboto Condensed', sans-serif;
+    color: grey;
+    width: 40vw;
+    font-size: 1.5vw;
+  }
 
 .container {
   display: flex;
   justify-content: space-between;
   width 900px;
-
-
-  @media screen and (max-width: $app-media-xs)
-  @include flexbox
-  @include flex-direction
-  > div
-    float: none !important
-    width: 100%
-    padding-left: 0 !important
-    padding-right: 0 !important
 }
 
 .container2 {
   display: flex;
   justify-content: flex-end;
-  width 200px;
-
-
-  @media screen and (max-width: $app-media-xs)
-  @include flexbox
-  @include flex-direction
-  > div
-    float: none !important
-    width: 100%
-    padding-left: 0 !important
-    padding-right: 0 !important
-
+  width: 60%
 }
 
 
 .a_propos {
-  width: 70px;
-	height: auto;
+  width: 7vw;
+  height: auto;
 }
 
 /* flex-direction: row; tjrs utile*/
@@ -101,10 +86,11 @@ h1 {
 .dropbtn {
     background-color: #AED6D3;
     color: grey;
-    padding: 12px;
+    padding: 12px; 12px;
     font-size: 14px;
     border: none;
 }
+
 
 /* The container <div> - needed to position the dropdown content */
 .dropdown {
@@ -142,3 +128,133 @@ h1 {
 ul ul {display: none; position: absolute; left: 140px; top: 0px; margin: 0px; padding: 0px;}
 li {list-style-type: none; position: relative; width: 140px; background-color: #E0E0E0}
 li:hover ul.niveau2, li li:hover ul.niveau3 {display: block}
+}
+
+
+
+@media only screen and (max-width: 600px) {
+  body {
+  font-family: 'Montserrat';
+  color: grey;
+  background-color: white;
+}
+
+
+h1 {
+  font-family: 'Amatic SC', cursive;
+  font-size: 5vw;
+  color: #e6ffff;
+  }
+
+  .accueil {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin-top: 4px;
+    height: 120vw;
+    background-image: url('img/FILLES.png');
+    background-size:100% auto;
+    background-position: top;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+  }
+
+  .titre {
+    font-family: 'Roboto', sans-serif;
+    font-size: 4vw;
+    color:  #AED6D3;
+  }
+
+  .texte {
+    font-family: 'Roboto Condensed', sans-serif;
+    color: grey;
+    width: 100%;
+    font-size: 3vw;
+  }
+
+.beatch {
+  width:100%;
+}
+
+  .dropbtn {
+      background-color: #AED6D3;
+      color: grey;
+      padding: 12px;
+      font-size: 20px;
+      border: none;
+      width: 45vw;
+      margin: auto;
+  }
+
+  .container {
+    display: block;
+    justify-content: space-between;
+    width:100%; }
+
+.container2 {
+  display: flex;
+  flex-wrap: wrap-reverse;
+  justify-content: center;
+}
+
+
+.a_propos {
+  width: auto;
+  height:  6vw;
+}
+
+
+/* flex-direction: row; tjrs utile*/
+
+
+/* Dropdown Button */
+.dropbtn {
+    background-color: #AED6D3;
+    color: grey;
+    padding: 12px;
+    font-size: 20px;
+    border: none;
+    width: 45vw;
+    margin: auto;
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+      position: relative;
+      display: inline-block;
+      margin: auto;
+  }
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0px 8px 12px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+    color: grey;
+    padding: 12px 12px;
+    text-decoration: none;
+    display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {background-color: #ddd;}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {display: block;}
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.dropdown:hover .dropbtn {background-color: #A6C7AC;}
+
+ul ul {display: none; position: absolute; left: 140px; top: 0px; margin: 0px; padding: 0px;}
+li {list-style-type: none; position: relative; width: 140px; background-color: #E0E0E0}
+li:hover ul.niveau2, li li:hover ul.niveau3 {display: block}
+}
