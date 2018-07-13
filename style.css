@@ -142,9 +142,8 @@ When you're done, you can delete all of this grey text, it's just a comment.
     justify-content: center;
     text-align: center;
     margin-top: 4px;
-    height: 35vw;
     background-image: url('img/couv2.png');
-    background-size:100% auto;
+    background-size:150%;
     background-position: top;
     background-attachment: fixed;
     background-repeat: no-repeat;
